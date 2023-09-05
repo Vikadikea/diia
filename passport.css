@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    background-color: #bae1ff;
+    font-family: 'e-Ukraine';
+}
+.diia-icon{
+    width: 40px;
+    height: 40px;
+}
+.scanner-icon{
+    width: 20px;
+    height: 20px;
+}
+.icons-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.card{
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    height: 400px;
+    width: 300px;
+    box-shadow: -1px 11px 32px -14px rgba(0,0,0,0.62);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.card-face{
+    height: 400px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 20px 15px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card-back{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY( 180deg );
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px 15px;
+
+}
+.card-back img{
+    width: 265px;
+}
+.qr-code{
+    color: rgba(99, 99, 99, 0.8);
+    font-size: 8px;
+    margin-left: 27px;
+}
+.codes-option img{
+    width: 22px;
+    height: 22px;
+}
+.codes-option{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-inline: auto;
+    font-size: 10px;
+}
+.qr-code-box{
+    position: relative;
+    border-radius: 25%;
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+}
+.barcode-box{
+    position: relative;
+    border-radius: 25%;
+    background-color: #bae1ff;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+}
+.qr-code-container, .barcode-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qr-code-box img{
+    position: absolute;
+    top: 6px;
+    left: 6.5px;
+}
+.barcode-box img{
+    position: absolute;
+    top: 6px;
+    left: 6.5px;
+}
+.card.is-flipped {
+    transform: rotateY(180deg);
+  }
+.passport-title{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.passport-title img{
+    margin-bottom: -3px;
+}
+.trident{
+    width: 20px;
+    height: 20px;
+}
+.information-container{
+    display: flex;
+}
+.info-box{
+    margin-left: 10px;
+    font-family: 'e-ukraine';
+    font-size: 12px;
+    font-weight: 700;
+}
+.passport-photo{
+    width: 120px;
+    height: 160px;
+    border: 2px solid rgb(127, 183, 252);
+}
+.birth-box{
+    margin-bottom: 20px;
+}
+.birth-date{
+    width: 50%;
+}
+.signature-img{
+    width: 160px;
+}
+.separator-line{
+    width: 270px;
+    height: 1.5px;
+    background-color: #95d0f7;
+    margin: 20px 0 15px 0;
+}
+.see-mone-container img{
+    width: 30px;
+    margin-left: auto;
+    display: inherit;
+}
+.number-container{
+    margin-bottom: 20px;
+}
+.name-container p{
+    display: inline-block;
+    font-size: 20px;
+    width: 70%;
+}
+.update{
+    font-size: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.scroll-box{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-box hr{
+    width: 6px;
+    height: 6px;
+    background-color: black;
+    opacity: 0.3;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.scroll-box .forth{
+    opacity: 1;
+    width: 8px;
+    height: 8px;
+}
+aside{
+    display: flex;
+    font-size: 8px;
+    justify-content: space-between;
+    padding: 15px;
+}
+aside span{
+    display: block;
+}
+aside div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+aside img{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+
+@font-face{
+    font-family: 'e-Ukraine';
+    src: local('e-Ukraine'), url(fonts/e-Ukraine-Bold.woff2) format('woff2');
+
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'e-Ukraine';
+    src: local('e-Ukraine'), url(fonts/e-Ukraine-Medium.woff2) format('woff2');
+
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'e-Ukraine';
+    src: local('e-Ukraine'), url(fonts/e-Ukraine-Regular.woff2) format('woff2');
+
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'e-Ukraine';
+    src: local('e-Ukraine'), url(fonts/e-Ukraine-Light.woff2) format('woff2');
+
+    font-weight: 700;
+}

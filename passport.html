@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="passport.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="icons-container">
+            <img class="diia-icon" src="icons/diia.svg" alt="">
+            <img class="scanner-icon" src="icons/icons8-qr-code-64.png" alt="">
+        </div>
+    </header>
+    <main>
+        <section class="card">
+        <section class="card-face">
+            <div class="passport-title">
+                <span>Паспорт громадянина України</span>
+                <img class="trident" src="icons/trident2.png" alt="">
+            </div>
+            <div class="information-container">
+                <div class="photo-box"> <img class="passport-photo" src="photos/passport-photo.jpg" alt=""></div>
+                <div class="info-box">
+                    <div class="birth-box">
+                        <p class="birth-date">Дата народження:</p>
+                        <p>15.08.2005</p>
+                    </div>
+                    <div class="number-box">
+                        <p>Номер:</p>
+                        <p>009938872</p>
+                    </div>
+                    <div class="signature-box"><img class="signature-img" src="icons/signora-sign.png" alt=""></div>
+                </div>
+            </div>
+            <hr class="separator-line">
+            <div class="name-container">
+                <p>Гаврильченко Вікторія Михайлівна</p>
+            </div>
+            <div class="see-mone-container">
+                <img src="icons/view-more.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="card-back">
+            <p class="qr-code">QR-КОД ДІЯТИМЕ 3 ХВ</p>
+            <img src="icons/qrcode.png" alt="">
+
+            <div class="codes-option">
+                <div class="qr-code-container">
+                    <div class="qr-code-box">
+                    <img src="icons/white-code.png" alt="">
+                </div>
+                    <p>QR-код</p>
+                </div>
+                <div class="barcode-container">
+                    <div class="barcode-box">
+                    <img src="icons/icons8-barcode-64.png" alt="">
+                </div>
+                    <p>Штрихкод</p>
+                </div>
+            </div>
+        </section>
+    </section>
+        <p class="update">Дaнні оновлено 15 вересня 2023 о 19:34</p>
+        <div class="scroll-box"> 
+        <hr>
+        <hr>
+        <hr>
+        <hr class="forth">
+        <hr> </div>
+
+    </main>
+    <aside>
+        
+        <div><img src="icons/documents.png" alt=""><span>Документи</span></div>
+        <div><img src="icons/icons8-flash-64.png" alt=""><span>Послуги</span></div>
+        <div><img src="icons/icons8-bell-48.png" alt=""><span>Повідомлення</span></div>
+        <div><img src="icons/icons8-menu-50.png" alt=""><span>Меню</span></div>
+    </aside>
+</body>
+
+
+<script>
+var card = document.querySelector('.card');
+card.addEventListener( 'click', function() {
+  card.classList.toggle('is-flipped');
+});</script>
+</html>
+
